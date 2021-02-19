@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      3.1 程序性技术
+      <div class="h4 section-title-en">
+        3.1 Algorithmic Techniques
+      </div>
+    </div>
+
+    <p class='p'>
+      所谓程序性技术，就是可以用图灵机实现的技术。
+    </p>
+
+    <p class='p'>
+      也就是说，可以被完全明确的执行的技术，可以通过完全明确的规则计算的技术。这样的技术是必然可以解出来的，只要带入适当的参数即可。
+    </p>
+
+    <p class='p'>
+      这些技术的学习，是为了让我们更好的理解，和娴熟的掌握基本的概念，尤其是内化这两个字，技术的好处是，所有的问题可模仿度极高，而且所有的问题都可以用编程的手段解出。
+    </p>
+
+    <p class='p'>
+      当我们初次接触一些概念的时候，我们所看到的只是一些凌乱的符号，一些表征的意思，当我们细致的模仿之后，我们开始对其有所体会，有所理解，某种情感开始贴附在这个概念上。技术类的问题不像定义类的问题，他开始让我们觉得拥有成就感，这些题目的解决开始建立起我们对更加困难的问题解决信心，或者是有了可以借鉴，可以抓的住的梯子，有了可以踮脚远望的踏脚石。
+    </p>
+
+    <p class='p'>
+      例如，我们在第一次学习音乐的时候，第一次接触五线谱的时候，我们看到的是一群奇怪的小黑点和波浪线，但是我们第一次练习的时候，并不是枯燥的去重复无聊的曲调，而是挑选一些优美的曲子，容易被学习和训练的曲子，在这些曲子的训练中，得到演奏乐器的快乐和成就感，让人感到自己的能量原来是巨大的，给人一种自信，让人觉得有信心去挑战更加复杂的题目，让人去假想或者去愿景自己的可以解决复杂问题的那一天。
+    </p>
+
+    <p class='p'>
+      但是在学校的教育中，因为老师的水平有限，他们对于学习的流程非常的不了解。他们对学生的无助和恐惧了解太少，在没有内化或是熟悉基本的学习之前，老师希望这些学生去做一个忧伤的乐曲，这是几乎不可能的，只有在智力上有超常能力的学生才能够突破这个极限。但是对于大多数的学生，
+    </p>
+
+    <p class='p'>
+      而在文明史上，技术的发明和推广，对人类的进步起到了非常重要的作用，例如，十进制的小数表示方法，或者用阿拉伯数字代替罗马数字之后的乘法运算，因为技术的更新和推广，让更多的人有了可以进一步学习的基础，增扩了人们可以解决问题的阈值，让更多的应用有可能被创造出来。这是非常非常重要的，仅此于思想范式的革新。
+    </p>
+
+    <p class='p'>
+      难道我们的学习主体不应该是技术吗？有多少高中的高深的技巧、崭新的情景会在大学中应用到呢？在我们进一步学习一些知识，或是解决更高级别的知识的时候，难道更重要的不是概念的逾越吗？
+当你初步学习高等量子力学的时候，你无需知道或者具备解决中考圆大题的能力，而是知道最为基础的矩阵运算就够了。
+    </p>
+
+    <p class='p'>
+    </p>
+
+    <p class='p'>
+      而且作为一个标准性的考试，这些技术是考察的主体，不仅他表现了解题者对某一领域概念性质的理解，也说明解题者具备了特定的技能，能够去执行一些固定化的任务。
+    </p>
+
+    <p class='p'>
+      而且作为一个标准性的考试，这些技术是考察的主体，不仅他表现了解题者对某一领域概念性质的理解，也说明解题者具备了特定的技能，能够去执行一些固定化的任务。
+    </p>
+
+
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

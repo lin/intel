@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      5.2.2 同义形式
+      <div class="h4 section-title-en">
+        5.2.2 Alternative Form
+      </div>
+    </div>
+
+    <p class='p'>
+      We prefer short forms. In that case we can remember less. So simplied forms EXPOSE MORE TOOLS for you. It opens ways or paths for you. It also REDUCE THE COMPLEXITY you need less calculation. you care less variables. less conditions.
+    </p>
+
+    <p class='p'>
+      化简举例
+    </p>
+
+    <ul class='example-list'>
+      <li><span class="math">x\ln{x} \ge x^2 -x \Rightarrow \ln{x} \ge x -1 </span></li>
+    </ul>
+
+    <ul class='example-list'>
+      <li>simplify reduce the computation at each turn early simplication can make work much easy to compute.</li>
+      <li>We can use more tools if we have a simplier form. since the majority of our toolbox is for simple forms</li>
+      <li>along the way, if the desired form is very closed to what we have in hand, we should directly transfer to that form.</li>
+      <li>Simplication is the midpoint (stepping stone)</li>
+    </ul>
+
+
+
+
+    <p class='p'>
+      这一节的主题就是，探寻什么样的逆运算是可以比较轻松解答的？
+    </p>
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

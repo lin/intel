@@ -1,0 +1,14 @@
+.contents-title {
+  padding: 20px 0 15px;
+    font-size: 21px;
+    font-weight: 700;
+}
+.contents-subtitle {
+  padding: 5px 0 5px;
+    font-size: 18px;
+}
+.contents-subtitle-sub {
+  font-size: 18px;
+  text-indent: 15px;
+  padding: 5px 0;
+}

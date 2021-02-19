@@ -1,0 +1,94 @@
+\section{Equivalence of Computation}
+
+Everytime you refactoring your codes, you are assuming the functionality of the codes with be the same for the situation (if there is no bugs).
+
+But why you believe that is actually a fact. Why do you think any array push any object and pop it with return the same array all the time? How can you let the computer to know it? Why in mathematics we have to give some result as axioms and assume they are right without asking more. Why the proof of mathematics has to start with some assumed result, but not a proof with only definition. Shouldn't we only trust definition if we speak of truth?
+
+The blessing of abstraction is from the rules of nature. That the world is not chaotic, it's capable of reproduce the regularity and the rule is quite reliable whenever and wherever in the world. You can design a product and reproduce it in any part of the world. You can write a website on your slow and old Macbook, and the whole world would visit it with the same rendering result on their own browsers. As I grow up, I realize the science works, the plane can fly, and when you are in the NYC, and make a phone call to China in the afternoon, your friends won't lie to you that they're in the midnight. The stars follow Newton's Law.
+
+Equivalence of computation is everywhere in computer science. But why? Here is an approach to explain this.
+
+As I stated earlier, the abstraction is based in physics, that you can reliable reproduce things if the setup is the same. The reason of equivalence is lying in the definition of computation. What do you mean by computing? And a more important thing is that what you mean by saying:
+
+It's true for any array. What is ANY ARRAY? While as I spend so more inks on distinguishability and indistinguishability, it's their time to on the show. When I say any array, I mean it does care the length of the array and the each item of the array.
+
+Let me give you an example of ANY. Imagine we have four floors, you are at the first floor, your instruction is that go to the third floor. Well, here is the trick, you don't care what's in the second floor, anything will work as long as the floor is there for you to distinguish the third floor. And you just assume an instance of the problem. It will work. Give an example, you will prove the whole class.
+
+Another example is that, when stack pointer is at RAM location (\%eax), and the next instruction is to fetch the (\%eax)+2, you don't care any content local in (\%eax)+1. You just don't care in the instruction. When you don't care the entire array elements, you have a proof for the equivalence of computation. Now let's refresh what array.push(x) do, it keep ignore the contents of the entire array and reach the buttom the array and add an elements. So any array will represent the whole class. Now, if we want to pop the last element, since we add the element at the end of the sequence, it doesn't touch or care or rely on the content of the array, that means the whole array is not disrupted. Then that means any instance of an array will represent the whole class. If the computer want to prove it, it simply shows that one instance works, so the whole class works. The program can add some flags, that indicate, does the instruction is changing the flag or not? if at the end the flags are remain unchanged, say it doesn't care the length of an array and the content of it. An instance is sufficient enough to show the class level facts.
+
+While in reality, at least to me, it happens all the time, when I try to solve a problem, or when I work out some result I can see that I try to find the invariant part in the process, does it care its content, should I release the requirements, how can I generalize the thing with less constraints. I work on the instance and try to find pattern, try to find what is required, does the instruction really cares about the length or content. The answer is in the definition, not in the axioms. If you are using axioms, you are giving a new definition not a new proof, not really explaining, but hard rote the result like antient people believes some God's angry brings the anormaty in the sky.
+
+The whole book is about there things, distinguishability, event-triggered transformation(under what condition do what) and abstraction. Abstraction is basically a way to say how restricted we want to say two things are the same or different. So the first and the third are the same thing, that means the whole book is all about computation and abstraction. And abstraction is way more important that computation in terms of solving problems, it's faster and smarter, it's real intelligence, where computer is merely a way to replace hard labour.
+
+The indistinguishability is implicitly defined in the definition of a specific transformation. The flags are there too. The things we have to do is to track to flags along the way to find out whether the transformation is distruptive or not. When you say for all array, you mean it still has to be an array, the definitive features has to be distinguishable, but other features are discarded, or make it indistinguishable. When you say all men has to die, you mean that the features of man is remains to distinguish, but the individual features are indistinguishable. When you say for all numbers a + b = b + a, you mean the counting procedure is distinguishable but the length of the objects is not.
+
+\subsection{One Instance to Represent All}
+
+The reason you use examples is that because of theorems are te same for the whole calss, os it as to be true for any instance, so you can use one instance to represent the class level facts.
+
+SPECIAL and SPECIFIC. One is for distinguishability, the other is for classification. I believe these two are linked together.
+
+The title if I was writing a thesis would be \textit{On distinguishability and equivalence check, the first step to abandon the axiomatic foundation of mathematics.}
+
+
+Here comes one of the greatest eureka of my life.
+
+You can give an object mulitiple abilities, and you can define classes, which are basically a Type 4 definition, with an output of True.
+
+And let's say what we are talking about is natural numbers, we can proof that for all the natural numbers certain rule holds. And when we can have several class level abilities.
+
+First, we must be able to proof and show the class level abilities.
+
+Second, we examine the process of instance transformation, along the way, we notice that for each step of transformation or aruguments, we are not touching its special ability that belong to it, e.g. 2 + 1 = 3 where a + 1 don't have such an ability, if we find this thing is actually happening, then we can make sure that one instant can show a whole class.
+
+One instant to proof all instance with the same ability.
+
+This is not the same as axiomic approach, where we only have limited ability to begin with, we can define infinite ability as we wish and we can explore what the combination of these abilities can go.
+
+This is exactly what human do, as I believe, because as we discussed before, that we know that human thinks in terms of tightness of abstraction, our nature is to distinguish and find pattern, so this huge pattern of ability is fundamental to think abstractly.
+
+For $x$ in $x + 2$, comparing to $x$, $2$ has more talents, it contains more information it has more power to transform.
+
+Where $x$ has every traits of transformation, as other real number but it can't add to high-resolution guys, it has limited abilities.
+
+If a has some ability, then a is an A. If a is A, a has the ability.
+
+The hard problem here is that how to proof that a class have a property that is true for all of the instance of its. This is so fundamental, it lays the foundation of mathematics. axims works like that the basic ability we take for granted and deduce all facts or ability from these. But actually we can prood these axiomic abilities too and find more abilities from it.
+
+\subsection{50 Examples of Equivalence of Computation}
+
+Let's see an example:
+\begin{example}
+  $\sin{20^\circ}\cos{10^\circ} + \cos{20^\circ}\sin{10^\circ}$
+\end{example}
+
+This is a computation problem. Which means in principle you could calculate it out if you have to assign it a number. The result would be approximately:
+\[ 0.3420201433256687 \times 0.984807753012208 + 0.9396926207859084 \times 0.17364817766693033 \]
+and the result is:
+\[ 0.499999999999999932207448412051372 \]
+
+But also you can transform it into $\sin( 20^\circ + 10^\circ )$, using a recognizer and transformer similiar like:
+
+\[ \sin{x}\cos{y} + \cos{x}\sin{y} = \sin{(x + y)} \]
+
+And then the result becomes $\sin{30^\circ}$, which is $0.5$, an exact result. This type of phenomenon is everywhere in mathematics. This fundamentally distinguishes the computing and transformation. And this is the core talking in this section.
+
+But why $\sin{x}\cos{y} + \cos{x}\sin{y} = \sin{(x + y)}$ ? Why when you compute in two different ways can give you the same result for every $x$ and $y$? In mathematics, you could find lots of identities. This type of identities is the equivalence of computation. And in solving the mathematical problems, you have to make this kind of transformation a lot, which is also called symbolical manipulation.
+
+Another example, what is the period of:
+\[ f(x) = \sin{x} \cos{x} + \cos^2{x} \]
+
+This is an extremely hard or even unsolvale problem if you don't reduce this problem to another. You can't enumerate all the possible integers, and you can't even to enumerate all famous irrational numbers, like $e^2$, $2e$, $2^e$. The only possible way to solve this problem is to reduce this problem to a solvable problem. Which in this case:
+\[ f(x) = \dfrac{\sqrt{2}}{2}\sin{\left(2x - \dfrac{\pi}{4}\right)} + \dfrac{1}{2} \]
+
+Then, the answer is now obvious to solve, $\pi$. Let's think it again. Can you solve the problem without transformations? That's a problem with ultimate complexity and maybe we could design a problem which could be inherently unsolvable.
+
+This is also a way to see the Godel's incompleteness theoroms. You can't use one tool to rule them all. The tool can only penetration a small portion of well defined problems.
+
+\begin{example}
+\begin{align*}
+  x = 1\cdot x \\
+  x = x + 0 \\
+  1 = \dfrac{x}{x}
+\end{align*}
+\end{example}

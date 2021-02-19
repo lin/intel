@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      1.5 要素训练：在知识传播中的应用
+      <div class="h4 section-title-en">
+        1.5 Essential Training: Applications On the Spread of Knowledge
+      </div>
+    </div>
+
+    <p class='p'>
+      教育里有多种迷信，其中最大的莫过于对天才数量的迷信。
+    </p>
+
+    <p class='p'>
+      在一定高度之上，一个人的思维能力的复杂程度是一个普通学生难以想象的，也就是说，在一个天才的大脑里所进行的复杂策略和尝试，是普通人难以模仿的，这也就是为什么天才可以在大脑中进行大量复杂的运算，而普通人连理解这样的运算都非常复杂，更别说要去独立解答。那些模糊的策略，即使被人理解也是很难得，难以训练，但对于天赋异禀的人来说，是相对轻易很多的。这种智力上的巨大差异，也导致了，知识传播的主体应该是普通人，而不是那些有特殊思维能力的天才们，更何况，天才的比例，应该是非常低的，而且是不讲道理的。一个受过大量的基础训练的成年人，在这些年龄幼小的天才面前，也会想的束手无策，甚至在竞争中满身流汗，却又无能为力。
+    </p>
+
+    <p class='p'>
+      根据我和学生的聊天，以及在学校课堂的观察。主体的教育模式问题重重。主要体现在，学生在课堂的吸收效率非常低，而且解决这种低效的方法不是通过一对一，即使是一对一，也不能真正解决问题，他会让一些问题简化，但是能解决问题的半径仍然很小。
+    </p>
+
+    <p class='p'>
+      学校教育的主体形式，是铺概念，铺公式，铺一些观点。但是我难以理解这种做法的高效性，对于那些选拔性的考试学习中，学习的效率要明显高效很多，因为在学习的过程中是辅助了很多习题的，而这些大量习题的解法，可以让一些学习能力强的学生，理解更深，归纳更多的规律。
+    </p>
+
+    <p class='p'>
+      可是，即使是习题，习题的选择和布置，也是非常的低效，缺乏足够的加工和处理，让人感到一头的雾水。例如，类型题，在课堂上只是被灌输了一道，而不是自己独立的模仿了很多道。有些策略性的题目，在课堂上几乎是一个综合题目的形式出现的。很难有很好的吸收。由于知识的低模仿度，零散的堆叠，导致学习效果差，学习的体验也非常的不好。
+    </p>
+
+    <p class='p'>
+      已有的教育方案，其失败之处，在于对知识没办法清晰的学懂。而选拔性的考试，采取抽查和综合的方式，只能起到区分和选拔的目的，难以起到真正的体现学生学习情况的作用。而因为高考在整个高中生活的重要地位，导致平时的考试同样出现了以选拔为目的的考题，而不是以考察为目的的考题。
+    </p>
+
+    <p class='p'>
+      为了理解教育的本质：我需要知道
+    </p>
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

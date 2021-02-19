@@ -1,0 +1,57 @@
+// length description
+
+// this is really important. The abstraction in coding is happenning all the time.
+// rules are everywhere
+// smiling, facing, racing, chasing, as long as you can generate or encounter a situation
+// then you can apply this rule.
+
+<img src='tom.png' width=54 height= 50/>
+<h1 style='font-size: 20px; font-family: Lato; font-style: italic; font-weight: light'>
+  Tom Hanks
+</h1>
+<p style='font-size: 18px; font-family: Lato; color: #838383'>
+  Today's gonna be a good day.
+</p>
+
+<img src='bill.png' width=54 height= 50/>
+<h1 style='font-size: 20px; font-family: Lato; font-style: italic; font-weight: light'>
+  Bill Gates
+</h1>
+<p style='font-size: 18px; font-family: Lato; color: #838383'>
+  Not today. Not today
+</p>
+
+<img src='jon.png' width=54 height= 50/>
+<h1 style='font-size: 20px; font-family: Lato; font-style: italic; font-weight: light'>
+  Jon Snow
+</h1>
+<p style='font-size: 18px; font-family: Lato; color: #838383'>
+  Tell me about step one again
+</p>
+
+<script type="text/javascript">
+  // a little bit shorter
+  img('tom');
+  h1('Tom Hanks');
+  p('Today's gonna be a good day.');
+
+  img('bill');
+  h1('Bill Gates');
+  p('Not today. Not today');
+
+  img('jon');
+  h1('Jon Snow');
+  p('Tell me about step one again');
+
+  // or even shorter
+  block = (src, name, quote) => { img(src); h1(name); p(quote);}
+  
+  block('tom', 'Tom Hanks', 'Today's gonna be a good day.');
+  block('bill', 'Bill Gates', 'Not today. Not today');
+  block('jon', 'Jon Snow', 'Tell me about step one again');
+
+  // the shortest
+  code([['tom', 'Tom Hanks', 'Today's gonna be a good day.'],
+        ['bill', 'Bill Gates', 'Not today. Not today'],
+        ['jon', 'Jon Snow', 'Tell me about step one again']]);
+</script>

@@ -1,0 +1,53 @@
+\documentclass[twoside]{book}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+% Bibliography
+\usepackage{biblatex}
+\addbibresource{bib.bib}
+\DefineBibliographyStrings{english}{%
+  bibliography = {References},
+}
+
+% Theorem Style
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+
+\newcommand{\computation}{ \textcolor{violet}{\bigcirc\rightarrow} }
+
+% \includeonly{computation/index}
+
+\title{ The Elements of Intelligence
+\thanks{This is the part one of a two-part project, as an update to the article \textit{Naturally} written in 2014, and the other part is \textit{A Guide to Life}}
+\thanks{You can find more resources for this book at https://github.com/lin/eofi, and https://github.com/lin/guide for \textit{A Guide to Life}}
+}
+\author{Yingkui Lin}
+\date{April 2019}
+
+\begin{document}
+
+  \frontmatter
+
+  \maketitle
+
+  \tableofcontents
+  \include{preface}
+  % \addcontentsline{toc}{chapter}{\protect\numberline{}Preface}
+
+  \mainmatter
+
+  \include{1-computation/index}
+  \include{2-abstraction/index}
+  \include{3-problems/index   }
+  \include{4-complexity/index }
+  \include{5-learning/index   }
+  \include{6-solving/index    }
+
+  % \printbibliography[heading=bibintoc]
+
+  \appendix
+
+\end{document}

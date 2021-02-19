@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      1.1 解决问题的艺术
+      <div class="h4 section-title-en">
+        1.1 The Art of Problem Solving
+      </div>
+    </div>
+
+    <p class='p'>
+      这一节的主体思想，来自于 <i>A.Gardiner</i> 的文章 《The Art of Problem Solving》。
+    </p>
+
+    <p class='p'>
+      解决问题的艺术魅力在于，不可能一点都说不出来，但也没办法说太多。本文的主旨，就是尽可能的去探索解决问题的边界，尤其是那些可以被模仿的边界。
+    </p>
+
+    <div class="quote">
+      Endless hands-on experience is likely to be far more important than any general principles.
+      <div class="quote-author">- A.Gardiner</div>
+    </div>
+
+    <p class='p'>
+      这个问题的一极是操作性极强的程序性技术，可以完整模仿操作的一个技术。另外一个极端，就是顶级数学家谜一般的操作，没有强烈的目的可以去理解，没有模糊的策略可以被捕捉，作为学生，你只能仰望这些大神们的神迹，而感叹自己能力上的有限而无法模仿。
+    </p>
+
+    <p class='p'>
+      虽然，问题（problem）的定义一般指的是让人头疼的那些，而习题（exercise）的定义或许更加轻松和直接，不过为了让我们能够流畅的从清晰到模糊，在这里，所有被提出来的需要被解决的，都叫做问题，而不是习题。
+    </p>
+
+    <div class="quote">
+      There are clear parallels between the experience of the very best mathematicians when they work in regions to which their own existing corpus gives no direct access and what happens when ordinary students operate out of their depth when tackling more mundane problems.
+      <div class="quote-author">- A.Gardiner (Paraphrase)</div>
+    </div>
+
+    <p class='p'>
+      当一个新手去解决自己能力范围之外，或者是工具外围问题的时候，他和一个数学家去解决一个难题的处境是差不多的。如果我们翻看数学史，我们知道一些数学概念的发展需要很长时间的进化。尤其是那些有巨大的概念上飞跃的领域。我们难以想象，当阿基米德最开始要研究球的表面积公式时的困惑，也感叹他的天才与智慧。不过如果你要求一个初中的学生去解决，似乎做出来了也没那么兴奋，不过我们要预先知道，这种差异性，知道对于孩子来说，这是多么巨大的挑战。阿基米德的极限思想，就算可以被这些新世纪的孩子理解都是非常困难的事情，更何况要求他们去解决呢。
+    </p>
+
+    <div class="quote">
+      To know or not to know a formerly solved problem with the same unknown may make all the difference between an easy and a difficult problem.
+      <div class="quote-author">- G.Polya</div>
+    </div>
+
+    <p class='p'>
+      <i>G.Polya</i> 在他的《How to solve it》中试图给解决问题带来大量积极的影响，但是他的呈现方式过于零散和模糊，很多观点和策略可模仿度很低，结构性不强。本文从某种意义上来说，也可以认为是对《How to solve it 》一书所要解决的问题，更为细致和结构化的展开。
+    </p>
+
+    <p class='p'>
+    </p>
+
+    <div class="quote">
+      Unfortunately the problem solving is an art at this point and there are no universal approaches one can take to solving problems. Basically one must explore possible avenues to a solution one by one until one comes across a right path to a solution. Thus generally speaking, there is guessing and hence an element of luck involved in problem solving. However, in general, as one gains experience in solving problems, one develops one's own techniques and strategies, though they are often intangible. Thus the guessing is not an arbitrary guessing but an educated one.
+    </div>
+
+    <div class="quote">
+      As one gains in expertise, one finds that one can 'just see' answers to more and more questions that might once have required an hour or two of hard thought.
+    </div>
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

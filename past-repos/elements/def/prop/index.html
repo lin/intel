@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+
+  <!-- hightlight -->
+  <link rel="stylesheet" href="./../../styles/atom-one-dark.css">
+  <script src="./../../highlight.pack.js" charset="utf-8"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      2.3 性质和公式
+      <div class="h4 section-title-en">
+        2.3 Properties and Formulas
+      </div>
+    </div>
+
+    <p class='p'>
+      性质和公式，一般是由定义推导出来的近距离的结论，其特点一般形式短小、使用频率高。
+    </p>
+
+    <p class='p'>
+      This is kind of shortcut we get while we explore the newly defined territory. So we don't need to revisit each time we need it purposely. We care it in several metrics: 1, frequency of usage.2,concise of the identities.3, short-range because of the frequency since we often visit the vicinity while we explore far.
+    </p>
+
+    <p class='p'>
+      Of those oceans of identities we can obtain, we prefer short identities and build from them, there'a easy to manipulate and remember.
+    </p>
+
+    <p class='p'>
+      下面是一系列的性质或公式的举例：
+    </p>
+
+    <p class='p'>
+      恒等式：<span class="math">a^{m+n} = a^ma^n</span> 意味着
+    </p>
+
+    <p class='p'>
+      恒等式：<span class="math">
+  \left\{
+  \begin{aligned}
+  2x + 3y - 3 \le 0 \\
+  2x - 3y + 3 \ge 0 \\
+  y + 3 \ge 0
+  \end{aligned}
+  \right.
+  </span> 意味着
+    </p>
+
+
+
+
+    <pre><code class="javascript">
+       power(a, add(x,y)) = multiply(power(a, m), power(a, n))
+    </code></pre>
+
+
+    <ul class='example-list'>
+      <li><span class="math">a^{m+n} = a^ma^n</span></li>
+      <li><span class="math">\sin{(A+B)} = \sin{A}\cos{B} + \cos{A}\sin{B}</span></li>
+      <li><span class="math">\sin^2x + \cos^2x = 1</span></li>
+      <li><span class="math">\log_a{xy} = log_a{x} + \log_a{y}</span></li>
+      <li><span class="math">C^k_n = C^{n-k}_n</span></li>
+      <li><span class="math">(a+b)^2=a^2+2ab+b^2</span></li>
+      <li><span class="math"> y=x^2 </span>是偶函数，其图像关于 <span class="math"> y </span>轴对称</li>
+      <li><span class="math"> \sin{\dfrac{\pi}{12}} =\dfrac{\sqrt{6} -\sqrt{2}}{4} </span></li>
+      <li><span class="math">(e^x)'=e^x</span></li>
+      <li>等比数列中，<span class="math">S_n = \dfrac{a_1(1-q^n)}{1-q}</span></li>
+      <li>余弦定理：<span class="math">a^2 = b^2+c^2 -2bc\cos{A}</span></li>
+      <li><span class="math">1^3+2^3+3^3+\cdots +n^3 = \dfrac{1}{4} n^2(n+1)^2</span></li>
+      <li><span class="math">[AB, C] = A[B, C] + [A, C]B</span></li>
+      <li><span class="math">-\ln{x} = \ln{\dfrac{1}{x}}</span></li>
+      <li><span class="math">\sum\limits^n_{i=1} \dfrac{1}{(2i-1)(2i+1)(2i+3)} = \dfrac{1}{12}-\dfrac{1}{4(2n+1)(2n+3)}</span></li>
+      <li><span class="math">a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)</span></li>
+      <li><span class="math">\sin{x} < x < \tan{x}, (0 < x < \dfrac{\pi}{2})</span></li>
+      <li><span class="math">\sin{x}>x-\dfrac{x^3}{6}, (x>0)</span></li>
+      <li>对于正数，<span class="math">\dfrac{a_1+a_2+\cdots+a_n}{n} \ge \sqrt[n]{a_1 a_2\cdots a_n}</span></li>
+      <li><span class="math">\tan{A} + \tan{B} + \tan{C}  = \tan{A}\tan{B}\tan{C}</span></li>
+      <li><span class="math">\sum\limits^n_{i=0} \dfrac{C^j_n}{j+1} = \dfrac{2^{n+1}-1}{n+1}</span></li>
+      <li><span class="math">\sin{3\alpha} = -4\sin^3{\alpha}+3\sin{\alpha}</span></li>
+      <li><span class="math">\ch{(x\pm y)} = \ch{x} \ch{y} \pm \sh{x}\sh{y}</span></li>
+      <li><span class="math">S=\sqrt{p(p-a)(p-b)(p-c)}</span></li>
+      <li>对于方程 <span class="math">x^3+px+q=0</span>： <span class="math">x_1+x_2+x_3=0</span>，<span class="math">\dfrac{1}{x_1}+\dfrac{1}{x_2}+\dfrac{1}{x_3} =-\dfrac{p}{q}</span>，<span class="math">x_1 x_2 x_3=-q</span></li>
+      <li>若矩阵可逆，则 <span class="math">\det A^{-1}= (\det A)^{-1}</span></li>
+      <li><span class="math">\dfrac{d}{dx}f(\phi(x)) = f'(\phi(x))\phi'(x)</li>
+      <li>椭圆切线方程：<span class="math">\dfrac{x_0 x}{a^2} + \dfrac{y_0 y}{b^2} =1 </li>
+      <li><span class="math">(\bold{a} \times \bold{b}) \cdot  (\bold{c} \times \bold{d}) = (\bold{a} \cdot \bold{c})  (\bold{b} \cdot \bold{d})  - (\bold{a} \cdot \bold{d}) (\bold{b} \cdot \bold{c}) </li>
+        <li><span class="math"> R_{jkl}i + R_{klj}i + R_{ljk}i = 0 </li>
+    </ul>
+
+
+
+    <p class='p'>
+      套用：
+    </p>
+
+    <p class='p'>
+      根据性质和公式，可以命制的一系列题目：
+    </p>
+    <ul class='example-list'>
+      <li>化简：<span class="math">a^3a^2</span></li>
+      <li>求 <span class="math">\sin{20^\circ}\cos{10^\circ} + \cos{20^\circ}\sin{10^\circ}</span></li>
+      <li>求 <span class="math">1^3+2^3+3^3+\cdots +10^3</span></li>
+      <li>三角形中，<span class="math">b=3, c = 2, A = \dfrac{\pi}{3}</span>，求 <span class="math">a</span></li>
+      <li>椭圆 <span class="math"></span></li>
+      <li>求 <span class="math"></span></li>
+    </ul>
+
+    <p>
+      ============== TODO =
+    </p>
+
+    <p class='p'>
+      对于程序性的定义，我们可以写出具体程序来表示这个定义，例如：
+    </p>
+
+    <pre><code class="javascript">
+      function eccentricity(ellipse) {
+        return ellipse.c / ellipse.a
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function residual(regression_equation, point) {
+        return point.y - regression_equation(point.x);
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function dot_product(vector_a, vector_b) {
+        return vector_a.x * vector_b.x + vector_a.y * vector_b.y ;
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function sum(array, n) {
+        var sum = 0;
+        for ( var i = 0; i < n; i++ ) {
+          sum += array[i];
+        }
+        return sum;
+      }
+    </code></pre>
+
+
+    <p class='p'>
+      而根据程序，我们可以命制的习题，例如：
+    </p>
+
+    <pre><code class="javascript">
+      console.log(eccentricity(new Ellipse(2, 1)));
+      console.log(residual(new Equation(3, -2), new Point(4, 9)));
+      console.log(dot_product(new Vector(1, 2), new Vector(2, 1)));
+      console.log(sum([1, 2, 3, 4, 5, 6, 7, 8], 3));
+    </code></pre>
+
+    <p class='p'>
+      这样的习题，无论是命制还是解答都是非常简单的。对于一个解决机，它只要识别出是定义级别的操作，从而直接带入函数即可。对于一个解题者，TA只要记住程序的每一步，按部就班的执行即可。
+    </p>
+
+
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

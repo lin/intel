@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../css/bootstrap.css">
+  <link rel="stylesheet" href="./../../style.css">
+
+  <link rel="stylesheet" href="./../../katex/katex.min.css">
+  <script src="./../../katex/katex.min.js" charset="utf-8"></script>
+  <script src="./../../jquery-3.3.1.min.js" charset="utf-8"></script>
+
+  <!-- hightlight -->
+  <link rel="stylesheet" href="./../../styles/atom-one-dark.css">
+  <script src="./../../highlight.pack.js" charset="utf-8"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <title>智力要素</title>
+</head>
+<body>
+  <div class="container main-container">
+    <div class="h3 main-title">
+      <a class='nil' href="./../../index.html">智力要素</a>
+    </div>
+    <div class="h4 section-title">
+      2.1 定义
+      <div class="h4 section-title-en">
+        2.1 Defination
+      </div>
+    </div>
+
+    <p class='p'>
+      定义分为两类：程序型定义（折叠）和筛选型定义（筛子）。
+    </p>
+
+    <p class='p'>
+      折叠就是对一连串的字符进行整体的代替，例如，<span class="math">\Delta \equiv b^2 - 4ac</span> 和 <span class="math">[A, B] \equiv AB - BA</span>。
+    </p>
+
+    <p class='p'>
+      筛子就是讲一个对象进行一定程序性操作后，能否实现规定的性质，例如，偶数和质数。
+    </p>
+
+    <p class='p'>
+      Def is the axioms of our game. These are the minunum steps we have. We start our exploration based on axioms. 
+    </p>
+
+    <p class='p'>
+      下面是一系列的定义举例：
+    </p>
+
+    <ul class='example-list'>
+      <li>复数：<span class="math">i^2 = -1</span></li>
+      <li>组合：<span class="math">C^k_n = \dfrac{n!}{(n-k)!k!}</span></li>
+      <li>阶乘：<span class="math">n! = 1\cdot 2\cdot 3 \cdots  n</span></li>
+      <li>求和：<span class="math">S_n = a_1 + a_2 + a_3 + \cdots + a_n</span></li>
+      <li>对数：<span class="math">a^b =c \Rightarrow \log_a{c} = b</span></li>
+      <li>离心率：<span class="math">e = \dfrac{c}{a}</span></li>
+      <li>共轭复数：<span class="math">a+bi \Rightarrow a-bi</span></li>
+      <li>双曲正弦：<span class="math">\sh{x} = \dfrac{e^x - e^{-x}}{2}</span></li>
+      <li>傅里叶变换：<span class="math">F(\xi) = \dfrac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}f(x)e^{i\xi x}dex</span></li>
+      <li>向量的点积：<span class="math">\bold{a} \cdot \bold{b} = x_1x_2 + y_1y_2</span></li>
+      <li>双曲线的渐近线：<span class="math">y = \pm\dfrac{b}{a}x</span></li>
+      <li>三角形的周长：<span class="math">C = a+b+c</span></li>
+    </ul>
+
+    <p class='p'>
+      根据定义，可以命制的一系列题目：
+    </p>
+    <ul class='example-list'>
+      <li>化简：<span class="math">(i+1)(i-1)</span></li>
+      <li>求 <span class="math">C^2_5</span></li>
+      <li>求 <span class="math">4!</span></li>
+      <li>已知 <span class="math">a_n = 3n + 2 </span>，求 <span class="math">S_4</span></li>
+      <li>求 <span class="math"> \log_2{8} </span></li>
+      <li>求 <span class="math"> \dfrac{x^2}{4} + \dfrac{y^2}{3} =1 </span> 的焦点坐标</li>
+      <li>已知 <span class="math"> A = \{1,2,3,4 \}, B = \{2,3,4,5 \} </span>，求 <span class="math"> A \cap B</span> </li>
+      <li>求 <span class="math"> \dfrac{x^2}{4} - \dfrac{y^2}{3} =1 </span> 的渐近线方程</li>
+      <li>已知 <span class="math"> \bold{a} = (1,2), \bold{b} = (2,3)</span>，求 <span class="math"> \bold{a} \cdot \bold{b}</span> </li>
+      <li>求 <span class="math"> \sh{(\ln{2})}</span> </li>
+      <li>已知回归方程 <span class="math"> \widehat{y} = 3x -2 </span>，求样本点 <span class="math">(4,9)</span>处的残差 </li>
+    </ul>
+
+    <p class='p'>
+      对于程序性的定义，我们可以写出具体程序来表示这个定义，例如：
+    </p>
+
+    <pre><code class="javascript">
+      function eccentricity(ellipse) {
+        return ellipse.c / ellipse.a
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function residual(regression_equation, point) {
+        return point.y - regression_equation(point.x);
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function dot_product(vector_a, vector_b) {
+        return vector_a.x * vector_b.x + vector_a.y * vector_b.y ;
+      }
+    </code></pre>
+
+    <pre><code class="javascript">
+      function sum(array, n) {
+        var sum = 0;
+        for ( var i = 0; i < n; i++ ) {
+          sum += array[i];
+        }
+        return sum;
+      }
+    </code></pre>
+
+
+    <p class='p'>
+      而根据程序，我们可以命制的习题，例如：
+    </p>
+
+    <pre><code class="javascript">
+      console.log(eccentricity(new Ellipse(2, 1)));
+      console.log(residual(new Equation(3, -2), new Point(4, 9)));
+      console.log(dot_product(new Vector(1, 2), new Vector(2, 1)));
+      console.log(sum([1, 2, 3, 4, 5, 6, 7, 8], 3));
+    </code></pre>
+
+    <p class='p'>
+      这样的习题，无论是命制还是解答都是非常简单的。对于一个解决机，它只要识别出是定义级别的操作，从而直接带入函数即可。对于一个解题者，TA只要记住程序的每一步，按部就班的执行即可。
+    </p>
+
+
+
+    <hr/>
+
+    <a class="btn btn-outline-secondary" href='./../../index.html'>目录</a>
+    <a class="btn btn-outline-secondary">上一节</a>
+    <a class="btn btn-outline-secondary">下一节</a>
+    <hr/>
+
+  </div>
+
+  <div class="container footer">
+    2018 © <a class='nil' href="http://albert.cn">albert innovation</a>
+  </div>
+  <script type="text/javascript">
+    (function(){
+      $(".math").each(function() {
+        var texTxt = $(this).text();
+        el = $(this).get(0);
+        if(el.tagName == "DIV"){
+            addDisp = "\\displaystyle";
+        } else {
+            addDisp = "";
+        }
+        try {
+            katex.render(addDisp+texTxt, el);
+        }
+        catch(err) {
+            $(this).html("<span class='err'>"+err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
